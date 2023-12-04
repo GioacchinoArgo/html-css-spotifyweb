@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top-content {
+    background-color: red;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    display: flex;
+}
+
+
+header {
+    height: 80px ;
+    background-color: darkblue;
+}
+
+main {
+    background-color: brown;
+}
+
+.small-box {
+    height: 120px;
+    background-color: black;
+}
+
+
+.sidebar {
+    width: 30px;
+    background-color: aquamarine;
+    flex-basis: 20%;
+}
+
+.inside-content {
+    flex-basis: 80%;
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
