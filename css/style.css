@@ -1,41 +1,160 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Generics */
+
+.li-big-logo {
+    display: none;
+}
+
+.span-sidebar {
+    font-size: 12px;
+    color: #A3A3A3;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.white {
+    font-weight: 600;
+    color: #fff;
+}
+
+span {
+    display: none;
+}
+
+ul {
+    list-style-type: none
+}
+
+/* Utils */
+
+
+/* Top-content */
 
 .top-content {
-    background-color: red;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* * Main */
+
+main {
+    flex-grow: 1;
+    background-color: #141922;
+    overflow: auto;
+}
+
+header {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    margin-bottom: 30px;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 85px;
+    text-align: right;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 45px;
+    border: 1px solid;
+    text-transform: uppercase;
+}
+
+/* * Sidebar */
+
+.flex {}
+
+.sidebar {
+    flex-basis: 40px;
+    flex-shrink: 0;
+    background-color: #000000;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
     display: flex;
 }
 
-
-header {
-    height: 80px ;
-    background-color: darkblue;
+#small-logo {
+    height: 28px;
+    filter: invert(0);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: inline;
 }
 
-main {
-    background-color: brown;
+#big-logo {
+    height: 45px;
+    filter: invert(0);
+    margin-bottom: 5px;
 }
 
-.small-box {
-    height: 120px;
-    background-color: black;
+.sidebar img {
+    height: 25px;
+    color: #D2D2D2;
+    filter: invert(20%);
+    margin: 0px 0 8px 0;
+    vertical-align: middle;
 }
 
-
-.sidebar {
-    width: 30px;
-    background-color: aquamarine;
-    flex-basis: 20%;
+.square-playlist {
+    color: #A3A3A3;
+    font-size: 40px;
+    margin-top: 8px;
+    vertical-align: middle;
+    display: none;
+    cursor: pointer;
 }
 
-.inside-content {
-    flex-basis: 80%;
-    height: calc(100vh - 80px);
-    overflow: auto;
+.span-sidebar-square {
+    font-size: 14px;
+    color: #A3A3A3;
+    font-weight: 600;
+    vertical-align: sub;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.li-sidebar {
+    line-height: 20px;
+}
+
+#download {
+    height: 16px;
+}
+
+#profile-img {
+    height: 25px;
+    width: 25px;
+    color: #D2D2D2;
+    filter: invert(0);
+    margin: 0 0 8px 0;
+    vertical-align: middle;
+    background: gray;
+    border-radius: 50%;
+}
+
+/* Footer */
+
+footer {
+    height: 100px;
+    background-color: #282828;
 }

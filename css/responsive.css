@@ -1,0 +1,55 @@
+@media only screen and (min-width: 639px) {
+
+    .sidebar {
+        flex-basis: 200px;
+        text-align: start;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .sidebar img {
+        height: 25px;
+        color: #D2D2D2;
+        filter: invert(20%);
+        margin: 5px 5px 5px 0;
+        vertical-align: middle;
+    }
+    
+    #small-logo {
+        display: none;
+    }
+
+    .li-small-logo {
+        display: none;
+    }
+
+    .li-big-logo {
+        display: inline;
+    }
+
+    #big-logo {
+        height: 35px;
+        margin-bottom: 25px;
+    }
+    
+    span {
+        display: inline-block;
+    }
+
+    .square-playlist {
+        display: inline-block;
+    }
+
+    .install {
+        margin-bottom: 0;
+    }
+
+    #profile-img {
+        margin: 10px 6px 10px 0;
+    }
+
+    .li-download {
+        border-bottom: 1px solid gray;
+        margin-right: 15px;
+    }
+}
