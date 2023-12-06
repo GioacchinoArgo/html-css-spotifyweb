@@ -1,7 +1,11 @@
-@media only screen and (min-width: 639px) {
+@media only screen and (min-width: 662px) {
+
+    .btn {
+        font-size: 16px;
+    }
 
     .btn:hover {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .sidebar {
@@ -10,10 +14,14 @@
     }
 
     .sidebar img {
-        height: 32px;
+        height: 40px;
         color: #D2D2D2;
         filter: invert(20%);
         margin: 5px 10px 5px 20px;
+    }
+
+    .span-sidebar {
+        font-size: 16px;
     }
     
     #small-logo {
@@ -33,7 +41,7 @@
     }
 
     #big-logo {
-        height: 45px;
+        height: 55px;
         margin-bottom: 25px;
         margin-top: 15px;
         margin-left: 25px;
@@ -69,5 +77,24 @@
 
     .li-download {
         border-bottom: 1px solid gray;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    .gallery li {
+        flex-basis: 25%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .gallery li {
+        flex-basis: calc(100% / 6);
     }
 }
