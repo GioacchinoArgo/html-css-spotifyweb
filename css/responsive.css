@@ -1,18 +1,19 @@
 @media only screen and (min-width: 639px) {
 
+    .btn:hover {
+        font-size: 16px;
+    }
+
     .sidebar {
-        flex-basis: 200px;
+        flex-basis: 250px;
         text-align: start;
-        padding-left: 20px;
-        padding-top: 20px;
     }
 
     .sidebar img {
-        height: 25px;
+        height: 32px;
         color: #D2D2D2;
         filter: invert(20%);
-        margin: 5px 5px 5px 0;
-        vertical-align: middle;
+        margin: 5px 10px 5px 20px;
     }
     
     #small-logo {
@@ -27,9 +28,23 @@
         display: inline;
     }
 
+    .span-sidebar:hover {
+        color: #fff;
+    }
+
     #big-logo {
-        height: 35px;
+        height: 45px;
         margin-bottom: 25px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    .li-navbar {
+        border-left: 5px solid transparent;
+    }
+
+    .li-navbar:active {
+        border-left: 5px solid #ADFF2F;
     }
     
     span {
@@ -39,6 +54,10 @@
     .square-playlist {
         display: inline-block;
     }
+
+    .li-white:hover {
+        color: #fff;
+    } 
 
     .install {
         margin-bottom: 0;
@@ -50,6 +69,5 @@
 
     .li-download {
         border-bottom: 1px solid gray;
-        margin-right: 15px;
     }
 }
