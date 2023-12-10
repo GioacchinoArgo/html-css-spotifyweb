@@ -24,7 +24,6 @@ img {
     font-size: 15px;
     color: #7C7F83;
     font-weight: 700;
-    margin-top: 10px;
     margin-right: 5px;
     cursor: pointer;
 }
@@ -44,9 +43,12 @@ ul {
 
 /* Utils */
 
-.container {
-    width: 1080px;
-    margin: 0 auto;
+.row .left {
+    justify-content: left;
+}
+
+.row .right {
+    justify-content: right;
 }
 
 .mt-50 {
@@ -61,10 +63,18 @@ ul {
     margin-bottom: 50px;
 }
 
+.ml-5 {
+    margin-left: 8px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
 /* Top-content */
 
 .top-content {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 90px);
     overflow: auto;
     display: flex;
     flex-direction: row;
@@ -81,14 +91,14 @@ main {
 /* Header */
 
 header {
-    height: 120px;
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     margin-bottom: 30px;
     top: 0;
     right: 0;
     left: 0;
-    line-height: 120px;
+    line-height: 90px;
     text-align: right;
     z-index: 1;
 }
@@ -127,13 +137,13 @@ nav ul {
 }
 
 h2 {
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     color: #fff;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 10px;
@@ -163,12 +173,12 @@ h4:hover {
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #fff;
 }
 
 h6 {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     color: #7C7F83;
 }
 
@@ -181,7 +191,7 @@ h6 {
 
 .gallery li {
     flex-basis: 50%;
-    padding: 15px;
+    padding: 5px;
 }
 
 .gallery h5 {
@@ -201,8 +211,8 @@ h6 {
     color: #fff;
     position: absolute;
     top: 0;
-    right: 10px;
-    left: 10px;
+    right: 0px;
+    left: 0px;
     bottom: 4px;
     display: flex;
     align-items: center;
@@ -213,8 +223,8 @@ h6 {
 
 .player-middle {
     top: 0;
-    right: 8px;
-    left: 8px;
+    right: 2px;
+    left: 2px;
     bottom: 4px;
 }
 
@@ -236,7 +246,7 @@ h6 {
 .player-radius {
     top: 0;
     right: 0;
-    left: 1px;
+    left: 0;
     bottom: 4px;
 }
 
@@ -252,7 +262,7 @@ h6 {
 
 
 .sidebar {
-    flex-basis: 70px;
+    flex-basis: 50px;
     flex-shrink: 0;
     background-color: #000000;
     text-align: center;
@@ -279,12 +289,11 @@ h6 {
     height: 30px;
     color: #D2D2D2;
     filter: invert(20%);
-    margin: 5px 10px 5px 0;
     vertical-align: middle;
 }
 
 .square-playlist {
-    font-size: 55px;
+    font-size: 42px;
     margin-top: 8px;
     vertical-align: middle;
     display: none;
@@ -293,7 +302,7 @@ h6 {
 }
 
 .span-sidebar-square {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     vertical-align: sub;
     margin-left: 10px;
@@ -305,34 +314,251 @@ h6 {
 }
 
 .li-sidebar {
-    line-height: 30px;
+    line-height: 28px;
     margin-left: 25px;
 }
 
 #download {
-    height: 16px;
-    margin: 5px 10px 5px 0;
+    height: 18px;
+    margin: 2px 6px 0 0;
 }
 
 #profile-img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     color: #D2D2D2;
     filter: invert(0);
-    margin: 0 0 8px 0;
-    vertical-align: middle;
+    margin: 0 0px 7px 0;
     background: gray;
     border-radius: 50%;
 }
 
 .install {
-    margin: 0 25px 0 25px;
+    padding: 0 25px 0 25px;
 }
 
 /* Footer */
 
 footer {
-    height: 120px;
+    height: 90px;
     background-color: #282828;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.col-left {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.col-center {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.col-right {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.col-70 {
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.col-30-left {
+    flex-basis: 30%;
+    display: flex;
+    font-weight: 600;
+    color: #7C7F83;
+}
+
+.col-30-left {
+    cursor: pointer;
+}
+
+.col-30 {
+    flex-basis: 30%;
+    display: flex;
+    font-weight: 600;
+}
+
+.col-30 i:hover {
+    text-shadow: 0 0 13px #fff; 
+}
+
+.col-30 ul {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+
+.sinister {
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    width: 30%;
+}
+
+.sinister-info {
+    width: 60px;
+}
+
+.sinister-title {
+    font-weight: 700;
+    color: #fff;
+}
+
+.sinister-subtitle {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #7C7F83;
+}
+
+
+.h-size {
+    font-size: 0.6rem;
+}
+
+
+.progress-bar {
+    display: flex;
+    height: 4px;
+    width: 80px;
+    background-color: #5A5A5A;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar .current-progress {
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #C1C1C1;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.current-progress .marker {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 50% -50%;
+    cursor: pointer;
+    display: none;
+}
+
+.current-progress:hover .marker {
+    display: flex;
+}
+
+
+.progress-bar .current-progress:hover {
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+.media-player {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.media-player i:hover {
+    cursor: pointer;
+    text-shadow: 0 0 13px #fff; 
+}
+
+.fa-circle-play {
+    font-size: 30px;
+    position: relative;
+    bottom: 7px;
+}
+
+.center-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.progress-bar-media {
+    width: 50%;
+    height: 4px;
+    background-color: #5A5A5A;
+    border-radius: 10px;
+}
+
+.progress-bar-media .current-progress-media {
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #C1C1C1;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.current-progress-media .marker-media {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    translate: 50% -50%;
+    cursor: pointer;
+    display: none;
+}
+
+.current-progress-media:hover .marker-media {
+    display: flex;
+}
+
+
+.progress-bar-media .current-progress-media:hover {
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+
+.timer span {
+    display: flex;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.timer {
+
+}
